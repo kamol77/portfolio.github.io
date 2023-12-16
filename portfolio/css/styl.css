@@ -1,0 +1,275 @@
+html{
+  color: white;
+  background-color: #000F08;
+
+  scroll-behavior: smooth;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    margin-right: 20%;
+
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  height: 100px;
+  font-size: 25px;
+  background-image: linear-gradient(#334195, #000F08);
+
+  align-items: center;
+  backdrop-filter: blur(15px);
+  border-radius: 0px 0px 15px 15px;
+  z-index: 999;
+}
+
+#about{
+  padding-top: 200px;
+  font-size: 60px;
+}
+
+#kamil{
+  transition: 0.3s;
+}
+
+#kamil:hover{
+  color: #334195;
+  transition: 0.3s;
+}
+
+
+
+
+main > .main{
+  margin-left: 10%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  font-size:  40px;
+}
+
+
+main > .main > .box{
+
+  /* background-color: #33429585; */
+  border-radius: 15px;
+  padding: 50px;
+  backdrop-filter: blur(15px);
+  background:radial-gradient(circle, #181f47, #000F08);
+
+
+}
+
+main > .main > .box > h2{
+  font-size: 35px;
+}
+
+.main > h1{
+  margin-top: 500px;
+  padding-top: 100px;
+  font-size: 60px;
+
+  text-align: center;
+}
+
+.main > .box > .line{
+  height: 15px;
+  width: 100%;
+  background: #334295;
+  position: relative;
+
+}
+
+
+
+#procent-html{
+  margin-left: 85%;
+  font-size: 30px;
+  
+}
+
+#procent-css{
+  margin-left: 65%;
+  font-size: 30px;
+
+}
+
+#procent-js{
+  margin-left: 20%;
+  font-size: 30px;
+
+}
+
+.line::before{
+  content: "";
+  position:absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  background: white;
+  z-index: 2;
+  animation: progress 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes progress {
+  0%{
+    width: 0;
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.html::before {
+  width: 90%;
+}
+
+
+.css::before {
+  width: 70%;
+}
+
+.js::before {
+  width: 25%;
+}
+
+
+
+.link{
+    text-decoration: none;
+    color: #FCFCFC;
+    margin-right: 50px;
+    text-transform: capitalize;
+
+    background-image: linear-gradient(
+    to right,
+    #54b3d6,
+    #54b3d6 50%,
+    #FCFCFC 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  /* -webkit-text-fill-color: transparent; */
+  transition: all 0.3s ease-in-out;
+}
+
+.link:before {
+  content: '';
+  background: #FCFCFC;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.link:hover{
+ background-position: 0;
+}
+
+.link:hover::before {
+  width:100%;
+}
+
+
+.cards{
+  width: 100%;
+  display: inline-flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card{
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  line-height: .75;
+  border-radius: 20px;
+  height: 200px;
+  transition: border .15s, transform .1s;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-long {
+  width: 500px;
+  font-size: 20px;
+}
+.card:hover {
+  transform: scale(1.1);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.card > h2{
+  margin: 0;
+  color: white;
+}
+
+
+
+.projekt{
+  width: 450px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+#projekt{
+  border-radius: 20px;
+  background:radial-gradient(circle, rgba(123, 97, 255, .2), rgba(123, 97, 255, .05));
+  text-decoration: none;
+  border: none;
+
+
+}
+
+#footer{
+  height: 100px;
+  text-align: center;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  color: #000F08;
+  background:radial-gradient(circle, #061e92, #000F08);
+
+}
+
+.some{
+  width: 300px;
+  text-align: center;
+}
+
+.social{
+  width: 300px;
+  text-align: center;
+}
+
+#ig, #dc{
+  width: 50px;
+  height: 50px;
+  /* margin-left: 50px; */
+}
+
+
